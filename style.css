@@ -1,0 +1,458 @@
+/*===============
+  global styles
+===============*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #282c35;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: 3.75rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.margin {
+  margin: 3rem 15%;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -6rem;
+  visibility: hidden;
+  margin-top: 6rem;
+}
+
+a:hover {
+  color: #bb86fc;
+}
+
+.btn {
+  background-color: #282c35;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: #bb86fc 2px solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*===============
+  Navigation Bar
+===============*/
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: #161b22;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.3rem;
+  z-index: 10;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  padding: 0 15px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/*========
+  Home
+========*/
+
+.home {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#slideDown {
+  transform: translateY(-300%);
+  -webkit-transform: translateY(-300%);
+  background-color: transparent;
+}
+
+#slideRight {
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+#slideUp {
+  transform: translateX(300%);
+  -webkit-transform: translateY(300%);
+}
+
+/*========
+    Vaardigheden
+  ========*/
+
+.vaardigheden {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vaardigheden-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 2rem;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.25);
+}
+
+.card-image {
+  height: 75px;
+}
+
+/*========
+    Projects
+  ========*/
+
+.projects_flex {
+  max-width: 1440px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  padding: 2em;
+  margin: 1rem auto;
+  text-align: center;
+  transition: transform 0.2s linear;
+  background-color: #161b22;
+  border-radius: 15px;
+  width: 47%;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+/*========
+    Contact
+  ========*/
+
+.contact-text {
+  font-size: 1.75rem;
+  margin: 1rem auto;
+  max-width: 1440px;
+}
+
+.contact-email {
+  margin-top: 3rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+/*========
+    Footer
+  ========*/
+
+hr {
+  border: #bb86fc 1px solid;
+}
+
+#footer {
+  background-color: #161b22;
+  color: #fff;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: no-wrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.nav-item-footer {
+  margin: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.footer-icons {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #bb86fc;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.fab {
+  margin: 1rem;
+}
+
+.footer-created {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.25rem;
+}
+
+.privacy {
+  margin-top: 0.5rem;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .home-image {
+    height: 15rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: 7vh;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    padding: 35% 0;
+  }
+
+  .burger {
+    display: block;
+    margin: 0 1.5rem;
+  }
+
+  .home-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 5%;
+  }
+
+  .projects__grid {
+    margin: 1.25rem auto;
+    flex-direction: column;
+  }
+
+  .project {
+    margin: 0.75rem auto;
+    width: 95%;
+  }
+
+  .contact-text {
+    font-size: 1.25rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .contact-email {
+    margin: 3rem 0;
+  }
+
+  #footer {
+    flex-direction: column;
+
+  }
+
+  .footer-nav {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .nav-item-footer {
+    margin: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .footer-icons {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem auto;
+    color: #bb86fc;
+    font-size: 2.5rem;
+  }
+
+  .fab {
+    margin: 1rem;
+  }
+
+  .footer-created {
+    margin: 3rem auto;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+  }
+
+  .privacy {
+    margin: 0.75rem auto;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.slide-in {
+  animation: slide-in 0.75s forwards;
+  -webkit-animation: slide-in 0.75s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
