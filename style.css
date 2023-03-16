@@ -50,6 +50,10 @@ h3 {
   margin: 3rem 15%;
 }
 
+button {
+  cursor: pointer;
+}
+
 a.anchor {
   display: block;
   position: relative;
@@ -141,18 +145,15 @@ a {
 
 #slideDown {
   transform: translateY(-300%);
-  -webkit-transform: translateY(-300%);
   background-color: transparent;
 }
 
 #slideRight {
   transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
 }
 
 #slideUp {
   transform: translateX(300%);
-  -webkit-transform: translateY(300%);
 }
 
 /*========
@@ -262,7 +263,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-nav {
@@ -328,7 +329,7 @@ hr {
 
   .nav-links {
     position: absolute;
-    right: 0px;
+    right: 0;
     height: 93vh;
     top: 7vh;
     flex-direction: column;
@@ -448,11 +449,5 @@ hr {
 @keyframes slide-in {
   100% {
     transform: translateX(0%);
-  }
-}
-
-@-webkit-keyframes slide-in {
-  100% {
-    -webkit-transform: translateX(0%);
   }
 }
