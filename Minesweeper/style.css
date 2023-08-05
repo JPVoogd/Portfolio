@@ -1,0 +1,65 @@
+body {
+  background-color: #282c35;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-size: 3.75rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+    border: 1px solid #333;
+    display: inline-block;
+    background-color: #161b22;
+    padding: 4px;
+  }
+  
+.cell {
+   display: block;
+   float: left;
+   width: 50px;
+   height: 50px;
+   background-color: #3c414f;
+   color: black;
+   margin: 4px;
+   padding-bottom:0;
+}
+
+.mine.revealed
+{
+  background-color: #282c35;
+  background-size: 50px 50px;
+  background-image: url("mine.png");
+}
+
+.revealed
+{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  color: #bb86fc;
+  font-size: 20px;
+  background-color: #282c35;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.flagged
+{
+  background-image: url("flag.png");
+  background-size: 50px 50px;
+}
+
+.disable_click{
+  pointer-events:none;
+}
+  
