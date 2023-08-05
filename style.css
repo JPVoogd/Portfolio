@@ -16,12 +16,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #282c35;
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -88,6 +90,7 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -377,7 +380,6 @@ hr {
 
   #footer {
     flex-direction: column;
-
   }
 
   .footer-nav {
