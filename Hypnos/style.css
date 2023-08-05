@@ -1,0 +1,38 @@
+/*===============
+  global styles
+===============*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #282c35;
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.75rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .privacy {
+    font-size: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
